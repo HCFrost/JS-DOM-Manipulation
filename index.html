@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Manipulation</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container p-5">
+    <div class="card">
+        <div class="card-body bg-secondary">
+            <label for="leaderboard" class="row">
+                <h2 class="col-sm" style="white-space: nowrap;">Leaderboard</h2>
+            </label>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label form="username" >Username</label>
+                        <input type="text" id="username" name="Username" value="Enter your Username" class="form-control text-muted">
+                    </div>
+                </div>    
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label form="score"> Score </label>
+                        <input type="number" id="score" name="score" value="0" class="form-control text-muted">
+                    </div>
+                </div>  
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label form="todaysDate">Date</label>
+                        <input type="date" id="todaysDate" name="date" class="form-control text-muted">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="submitBtn"></label>
+                        <input type="submit" id="submitBtn" class="form-control btn btn-primary">
+                    </div>
+                </div>      
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <table id="leaderboard" class="table table-dark table-striped table-hover table-bordered border-black ">
+                        <tr >
+                            <th class="col-sm">Username</th>
+                            <th class="col-sm">Score</th>
+                            <th class="col-sm">Date</th>
+                            <th class="col-sm">Delete</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
